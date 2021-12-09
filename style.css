@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0;
+}
+
+.content > *{
+  padding: 1rem 0;
+}
+/*#region Header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+header > .logo {
+  color: black;
+  letter-spacing: 0.2rem;
+  padding: 1.2rem 1%;
+}
+
+header > .logo:hover {
+  background-color: rgb(185, 182, 182);
+}
+
+header > .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .navbar > a {
+  color: black;
+  padding: 1.2rem;
+  font-size: 1rem;
+}
+
+header > .navbar > a:hover {
+  background-color: rgb(185, 182, 182);
+}
+/*#endregion*/
+/*#region Home*/
+.home {
+  position: relative;
+  background: url("./images/mac.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  z-index: 100;
+  margin: 0;
+  filter: grayscale(50%);
+}
+
+/* .home::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+} */
+
+.home > .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-left: 3rem;
+  position: relative;
+}
+
+.home > .inner > .inner_content{
+  margin: 23rem 0;
+}
+
+.home > .inner > .inner_content > h1{
+  font-size: 4rem;
+}
+
+.home > .inner > .inner_content > p{
+  font-size: 1.1rem;
+  padding: 3rem 0;
+}
+
+.home > .inner > .inner_content > .btn{
+  background-color: rgba(190, 190, 190, 0.774);
+  padding: 1rem 1.2rem;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.home > .inner > .inner_content > .btn:hover{
+  background-color: rgb(211, 205, 205);
+}
+
+.home > .inner > .social{
+  position: absolute;
+  bottom: 0;
+  color: rgba(190, 190, 190, 0.774);
+  font-size: 1.2rem;
+}
+
+.home > .inner > .social > i:hover{
+  color: rgba(190, 190, 190, 0.534);
+}
+/*#endregion*/
+/*#region About*/
+.about > .content > p{
+  font-size: 1.1rem;
+}
+
+.about > .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about > .inner > .box{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about > .inner > .box > *{
+  padding: 1rem 0;
+}
+
+.about > .inner > .box > i{
+  font-size: 4.5rem;
+}
+
+.about > .inner > .box > p{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.about > .design{
+  background-color: #f1f1f1;
+  margin: 110px 0;
+  padding: 6rem 0;
+}
+
+.about > .design > .inner{
+  width: 86%;
+  padding: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about > .design > .inner > img{
+  border-radius: 0.5rem;
+}
+
+.about > .design > .inner > .inner_content > *{
+  padding: 1.5rem 0;
+}
+
+.about > .design > .inner > .inner_content > p{
+  line-height: 1.5rem;
+}
+
+.about > .design > .inner > .inner_content > .btn{
+  background-color: black;
+  padding: 1rem;
+  color: white;
+}
+
+.about > .design > .inner > .inner_content > .btn:hover{
+  background-color: #afadad;
+  color: black;
+}
+
+.about > .design > .inner > .inner_content > .btn > i{
+  margin: 0 0.5rem;
+}
+/*#endregion*/
+/*#region Team*/
+.team > .content > h1{
+  padding-bottom: 1rem;
+}
+
+.team > .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.team > .inner > .box{
+  width: 24%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.team > .inner > .box > .image{
+  width: 100%;
+  height: 20rem;
+}
+
+.team > .inner > .box > .image > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+
+.team > .inner > .box > .inner_content{
+  padding: 1rem;
+}
+
+.team > .inner > .box > .inner_content > h1{
+  padding-bottom: 1rem;
+}
+
+.team > .inner > .box > .inner_content > p{
+  padding:  1rem 0;
+}
+
+.team > .inner > .box > .inner_content > .btn{
+  background-color: #f1f1f1;
+  padding: 1rem;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.team > .inner > .box > .inner_content > .btn > i{
+  margin-right: 0.2rem;
+}
+
+.team > .inner > .box > .inner_content > .btn:hover{
+  background-color: #afadad;
+}
+/*#endregion*/
+/*#region Other*/
+.other > .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #616161;
+  margin: 100px 0;
+}
+
+.other > .inner > .box{
+  width: 24%;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.other > .inner > .box > *{
+  padding: 1rem;
+}
+
+.other > .inner > .box > span{
+  font-size: 2rem;
+}
+/*#endregion*/
+/*#region Work*/
+.work > .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.work > .inner > .box{
+  width: 24%;
+}
+
+.work > .inner > .box > img{
+  width: 100%;
+}
+
+.work > .inner > .box > img:hover{
+ opacity: 0.7;
+}
+
+.work > .work_inner {
+  margin-top: 110px;
+  background-color: #f1f1f1;
+}
+
+.work > .work_inner > .work_content{
+  padding: 3rem 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work > .work_inner > .work_content > .work_inner_content > *{
+  padding: 1rem 0;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > p{
+  padding: 1rem 0;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > .gray{
+  background-color: #9e9e9e;
+  width: 55rem;
+  height: 1.5rem;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > .gray > div{
+  height: 1.5rem;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > .gray > .right{
+  background-color: #616161;
+  width: 90%;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > .gray > .middle{
+  background-color: #616161;
+  width: 85%;
+}
+
+.work > .work_inner > .work_content > .boxes > .box > .gray > .left{
+  background-color: #616161;
+  width: 75%;
+}
+/*#endregion*/
+/*#region Pricing*/
+.pricing{
+  background-color: #616161;
+  height: 100vh;
+}
+
+.pricing > .content{
+  color: white;
+}
+
+.pricing > .inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 3%;
+}
+
+.pricing > .inner > .box{
+  width: 38rem;
+  height: 34rem;
+  background-color: white;
+}
+
+.pricing > .inner > .box:hover{
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.pricing > .inner > .box > *{
+  border-bottom: 1px solid #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pricing > .inner > .box:nth-child(even){
+  position: relative;
+  top: -1rem;
+}
+.pricing > .inner > .box > .red{
+  background-color: #f44336;
+  padding: 4rem;
+}
+
+.pricing > .inner > .box  > p > span{
+  font-weight: bold;
+}
+
+.pricing > .inner > .box > h1{
+  background-color: black;
+  color: white;
+  padding: 3rem;
+}
+
+.pricing > .inner > .box > .price{
+  padding: 2rem;
+}
+
+.pricing > .inner > .box > .price > p{
+  font-weight: 200;
+  padding-top: 2rem;
+}
+.pricing > .inner > .box  > .btns{
+  background-color: #f1f1f1;
+  border-bottom: none;
+  padding: 3rem 0;
+}
+
+.pricing > .inner > .box  > .btns > .btn{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.pricing > .inner > .box  > .btns > .btn:hover{
+  background-color: #9e9e9e;
+  color: black;
+}
+/*#endregion*/
+/*#region Contact*/
+.contact{
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.contact > .inner > .box{
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact > .inner > .box > span > i{
+  font-size: 2rem;
+}
+
+.contact > .inner > form{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0.5rem;
+}
+
+.contact > .inner > form > input{
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.contact > .inner > form > button{
+  background-color: black;
+  color: white;
+  width: 10rem;
+  padding: 0.8rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.contact > .inner > form > button:hover{
+  background-color: #9e9e9e;
+  color: black;
+}
+
+.contact > .images{
+  padding: 4rem 1rem;
+}
+
+.contact > .images > img{
+  width: 100%;
+  filter: grayscale(70%);
+}
+/*#endregion*/
+/*#region Footer*/
+.footer{
+  background-color: black;
+  height: 15rem;
+  padding: 4rem 0;
+}
+
+.footer > .inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.footer > .inner > *{
+  padding: 1rem 0;
+}
+
+.footer > .inner > .btn{
+  background-color: #f1f1f1;
+  color: black;
+  padding: 1rem;
+}
+
+.footer > .inner > .btn:hover{
+  background-color: #afadad;
+}
+
+.footer > .inner > .social > i{
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+.footer > .inner > .social > i:hover{
+  color: #afadad;
+}
+
+.footer > .inner > p > a{
+  text-decoration: underline;
+  color: white;
+}
+
+.footer > .inner > p > a:hover{
+  color: green;
+}
+/*#endregion*/
